@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover museum exhibits, explore your interests and plan your perfect museum visit.">
+  <title>Museum Explorer | Plan Your Museum Visit</title>
+
+  <!-- Shared stylesheet for all pages -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Load shared data and functions before the page-specific JavaScript -->
+  <script src="js/exhibits.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+
+<body>
+  <!-- common.js can insert the same navigation bar used on every page here -->
+  <div id="navbar"></div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">DISCOVER • EXPLORE • EXPERIENCE</p>
+        <h1 id="hero-title">Make the Most of Your Museum Visit</h1>
+        <p class="hero-description">
+          Discover fascinating exhibits, explore what interests you and create
+          a visit plan that makes every minute count.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="catalogue.html">Start Exploring</a>
+          <a class="btn btn-secondary" href="interests.html">Find My Interests</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section how-it-works" aria-labelledby="how-title">
+      <div class="section-heading">
+        <p class="eyebrow">A SIMPLE WAY TO EXPLORE</p>
+        <h2 id="how-title">How It Works</h2>
+        <p>Plan your museum experience in three simple steps.</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-icon" aria-hidden="true">01</div>
+          <h3>Browse Exhibits</h3>
+          <p>Explore the museum catalogue and discover exhibits from different categories.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-icon" aria-hidden="true">02</div>
+          <h3>Choose Your Interests</h3>
+          <p>Select the subjects you enjoy and save the exhibits you would love to see.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-icon" aria-hidden="true">03</div>
+          <h3>Get Your Visit Route</h3>
+          <p>Create a visit route that fits the time you have available.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURED EXHIBITS: home.js should insert exhibit cards into this container -->
+    <section class="section featured-section" aria-labelledby="featured-title">
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="eyebrow">A FEW HIGHLIGHTS</p>
+          <h2 id="featured-title">Featured Exhibits</h2>
+          <p>Take a look at some fascinating things waiting to be discovered.</p>
+        </div>
+        <a class="text-link" href="catalogue.html">View All Exhibits &rarr;</a>
+      </div>
+
+      <div id="featured-exhibits" class="exhibit-grid">
+        <!-- home.js can create and insert the first three exhibit cards here. -->
+        <p class="loading-message">Featured exhibits will appear here.</p>
+      </div>
+    </section>
+
+    <!-- CATEGORIES: home.js can create category links from the exhibit data -->
+    <section class="section categories-section" aria-labelledby="categories-title">
+      <div class="section-heading">
+        <p class="eyebrow">FIND WHAT YOU LOVE</p>
+        <h2 id="categories-title">Explore by Category</h2>
+        <p>Choose a subject and start your journey of discovery.</p>
+      </div>
+
+      <div id="category-list" class="category-grid">
+        <a class="category-card" href="catalogue.html?category=Art">
+          <span class="category-symbol" aria-hidden="true">✦</span>
+          <span>Art</span>
+        </a>
+        <a class="category-card" href="catalogue.html?category=History">
+          <span class="category-symbol" aria-hidden="true">⌛</span>
+          <span>History</span>
+        </a>
+        <a class="category-card" href="catalogue.html?category=Science">
+          <span class="category-symbol" aria-hidden="true">⚗</span>
+          <span>Science</span>
+        </a>
+        <a class="category-card" href="catalogue.html?category=Nature">
+          <span class="category-symbol" aria-hidden="true">❋</span>
+          <span>Nature</span>
+        </a>
+        <a class="category-card" href="catalogue.html?category=Culture">
+          <span class="category-symbol" aria-hidden="true">⌂</span>
+          <span>Culture</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="visit-cta" aria-labelledby="cta-title">
+      <div>
+        <p class="eyebrow">YOUR MUSEUM DAY STARTS HERE</p>
+        <h2 id="cta-title">Ready to discover something amazing?</h2>
+        <p>Explore the collection and plan a visit that is your own.</p>
+      </div>
+      <a class="btn btn-light" href="catalogue.html">Explore the Catalogue</a>
+    </section>
+  </main>
+
+  <!-- common.js can insert the shared footer here -->
+  <div id="footer"></div>
+</body>
+</html>
